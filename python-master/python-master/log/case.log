@@ -20303,3 +20303,870 @@
 2020-02-04 19:15:11,396-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 500000}
 2020-02-04 19:15:11,818-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"102521959.38","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"取现成功"}
 2020-02-04 19:15:12,293-[INFO]-test_withdraw.py[line:58] -[withdraw]-[日志信息]:第26用例执行结果：PASS
+2020-02-07 22:11:54,854-[INFO]-test_invest.py[line:24] -[invest]-[日志信息]:开始执行第1用例
+2020-02-07 22:11:54,860-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/login
+2020-02-07 22:11:54,861-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'pwd': '123456'}
+2020-02-07 22:11:55,071-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":null,"msg":"登录成功"}
+2020-02-07 22:11:55,072-[INFO]-test_invest.py[line:28] -[invest]-[日志信息]:{"status":1,"code":"10001","data":null,"msg":"登录成功"}
+2020-02-07 22:11:55,209-[INFO]-test_invest.py[line:32] -[invest]-[日志信息]:第1用例执行结果：PASS
+2020-02-07 22:11:55,210-[INFO]-test_invest.py[line:24] -[invest]-[日志信息]:开始执行第2用例
+2020-02-07 22:11:55,211-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/loan/add
+2020-02-07 22:11:55,211-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'memberId': '2249', 'title': '借款买房', 'amount': 100000, 'loanRate': 18.0, 'loanTerm': 6, 'loanDateType': 0, 'repaymemtWay': 4, 'biddingDays': 4}
+2020-02-07 22:11:55,240-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":null,"msg":"加标成功"}
+2020-02-07 22:11:55,240-[INFO]-test_invest.py[line:28] -[invest]-[日志信息]:{"status":1,"code":"10001","data":null,"msg":"加标成功"}
+2020-02-07 22:11:55,344-[INFO]-test_invest.py[line:32] -[invest]-[日志信息]:第2用例执行结果：PASS
+2020-02-07 22:11:55,427-[INFO]-test_invest.py[line:24] -[invest]-[日志信息]:开始执行第3用例
+2020-02-07 22:11:55,428-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/loan/audit
+2020-02-07 22:11:55,428-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'id': '138260', 'status': 4}
+2020-02-07 22:11:55,446-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":null,"msg":"更新状态成功：竞标开始，当前标为竞标中状态"}
+2020-02-07 22:11:55,447-[INFO]-test_invest.py[line:28] -[invest]-[日志信息]:{"status":1,"code":"10001","data":null,"msg":"更新状态成功：竞标开始，当前标为竞标中状态"}
+2020-02-07 22:11:55,561-[INFO]-test_invest.py[line:32] -[invest]-[日志信息]:第3用例执行结果：PASS
+2020-02-07 22:11:55,562-[INFO]-test_invest.py[line:24] -[invest]-[日志信息]:开始执行第4用例
+2020-02-07 22:11:55,563-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/login
+2020-02-07 22:11:55,563-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '18877314371', 'pwd': '123456'}
+2020-02-07 22:11:55,724-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":null,"msg":"登录成功"}
+2020-02-07 22:11:55,725-[INFO]-test_invest.py[line:28] -[invest]-[日志信息]:{"status":1,"code":"10001","data":null,"msg":"登录成功"}
+2020-02-07 22:11:55,861-[INFO]-test_invest.py[line:32] -[invest]-[日志信息]:第4用例执行结果：PASS
+2020-02-07 22:11:55,862-[INFO]-test_invest.py[line:24] -[invest]-[日志信息]:开始执行第5用例
+2020-02-07 22:11:55,864-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/bidLoan
+2020-02-07 22:11:55,865-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'memberId': '2113', 'password': '123456', 'loanId': '138260', 'amount': '100'}
+2020-02-07 22:11:55,911-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":null,"msg":"竞标成功"}
+2020-02-07 22:11:55,913-[INFO]-test_invest.py[line:28] -[invest]-[日志信息]:{"status":1,"code":"10001","data":null,"msg":"竞标成功"}
+2020-02-07 22:11:56,150-[INFO]-test_invest.py[line:32] -[invest]-[日志信息]:第5用例执行结果：PASS
+2020-02-07 22:11:56,151-[INFO]-test_invest.py[line:24] -[invest]-[日志信息]:开始执行第6用例
+2020-02-07 22:11:56,152-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/bidLoan
+2020-02-07 22:11:56,152-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'memberId': '2113', 'password': '123456', 'loanId': '138260', 'amount': ''}
+2020-02-07 22:11:56,165-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"11003","data":null,"msg":"参数错误:所有参数都不能为空"}
+2020-02-07 22:11:56,166-[INFO]-test_invest.py[line:28] -[invest]-[日志信息]:{"status":0,"code":"11003","data":null,"msg":"参数错误:所有参数都不能为空"}
+2020-02-07 22:11:56,313-[INFO]-test_invest.py[line:32] -[invest]-[日志信息]:第6用例执行结果：PASS
+2020-02-07 22:11:56,314-[INFO]-test_invest.py[line:24] -[invest]-[日志信息]:开始执行第7用例
+2020-02-07 22:11:56,315-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/bidLoan
+2020-02-07 22:11:56,316-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'memberId': '2113', 'password': '123456', 'loanId': '138260', 'amount': '-100'}
+2020-02-07 22:11:56,329-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"11007","data":null,"msg":"参数错误，投资金额必须是能被100整除的正整数"}
+2020-02-07 22:11:56,330-[INFO]-test_invest.py[line:28] -[invest]-[日志信息]:{"status":0,"code":"11007","data":null,"msg":"参数错误，投资金额必须是能被100整除的正整数"}
+2020-02-07 22:11:56,479-[INFO]-test_invest.py[line:32] -[invest]-[日志信息]:第7用例执行结果：PASS
+2020-02-07 22:11:56,480-[INFO]-test_invest.py[line:24] -[invest]-[日志信息]:开始执行第8用例
+2020-02-07 22:11:56,481-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/bidLoan
+2020-02-07 22:11:56,481-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'memberId': '2113', 'password': '123456', 'loanId': '138260', 'amount': '100'}
+2020-02-07 22:11:56,519-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":null,"msg":"竞标成功"}
+2020-02-07 22:11:56,519-[INFO]-test_invest.py[line:28] -[invest]-[日志信息]:{"status":1,"code":"10001","data":null,"msg":"竞标成功"}
+2020-02-07 22:11:56,662-[INFO]-test_invest.py[line:32] -[invest]-[日志信息]:第8用例执行结果：PASS
+2020-02-07 22:11:56,663-[INFO]-test_invest.py[line:24] -[invest]-[日志信息]:开始执行第9用例
+2020-02-07 22:11:56,664-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/bidLoan
+2020-02-07 22:11:56,665-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'memberId': '2113', 'password': '123456', 'loanId': '138260', 'amount': ''}
+2020-02-07 22:11:56,678-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"11003","data":null,"msg":"参数错误:所有参数都不能为空"}
+2020-02-07 22:11:56,678-[INFO]-test_invest.py[line:28] -[invest]-[日志信息]:{"status":0,"code":"11003","data":null,"msg":"参数错误:所有参数都不能为空"}
+2020-02-07 22:11:56,830-[INFO]-test_invest.py[line:32] -[invest]-[日志信息]:第9用例执行结果：PASS
+2020-02-07 22:11:56,831-[INFO]-test_invest.py[line:24] -[invest]-[日志信息]:开始执行第10用例
+2020-02-07 22:11:56,832-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/bidLoan
+2020-02-07 22:11:56,832-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'memberId': '2113', 'password': '123456', 'loanId': '138260', 'amount': '-100'}
+2020-02-07 22:11:56,845-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"11007","data":null,"msg":"参数错误，投资金额必须是能被100整除的正整数"}
+2020-02-07 22:11:56,846-[INFO]-test_invest.py[line:28] -[invest]-[日志信息]:{"status":0,"code":"11007","data":null,"msg":"参数错误，投资金额必须是能被100整除的正整数"}
+2020-02-07 22:11:57,013-[INFO]-test_invest.py[line:32] -[invest]-[日志信息]:第10用例执行结果：PASS
+2020-02-07 22:11:57,015-[INFO]-test_login.py[line:35] -[login]-[日志信息]:开始执行第1用例
+2020-02-07 22:11:57,016-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/login
+2020-02-07 22:11:57,016-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'pwd': '123456', 'regname': 'nana'}
+2020-02-07 22:11:57,179-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":null,"msg":"登录成功"}
+2020-02-07 22:11:57,618-[INFO]-test_login.py[line:41] -[login]-[日志信息]:第1用例执行结果：PASS
+2020-02-07 22:11:57,619-[INFO]-test_login.py[line:35] -[login]-[日志信息]:开始执行第2用例
+2020-02-07 22:11:57,621-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/login
+2020-02-07 22:11:57,621-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'pwd': '123457', 'regname': 'nana'}
+2020-02-07 22:11:57,793-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20111","data":null,"msg":"用户名或密码错误"}
+2020-02-07 22:11:58,041-[INFO]-test_login.py[line:41] -[login]-[日志信息]:第2用例执行结果：PASS
+2020-02-07 22:11:58,045-[INFO]-test_login.py[line:35] -[login]-[日志信息]:开始执行第3用例
+2020-02-07 22:11:58,048-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/login
+2020-02-07 22:11:58,049-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'pwd': '', 'regname': 'nana'}
+2020-02-07 22:11:58,062-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20103","data":null,"msg":"密码不能为空"}
+2020-02-07 22:11:58,435-[INFO]-test_login.py[line:41] -[login]-[日志信息]:第3用例执行结果：PASS
+2020-02-07 22:11:58,439-[INFO]-test_login.py[line:35] -[login]-[日志信息]:开始执行第4用例
+2020-02-07 22:11:58,446-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/login
+2020-02-07 22:11:58,448-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '', 'pwd': '123456', 'regname': 'nana'}
+2020-02-07 22:11:58,510-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}
+2020-02-07 22:11:58,811-[INFO]-test_login.py[line:41] -[login]-[日志信息]:第4用例执行结果：PASS
+2020-02-07 22:11:58,812-[INFO]-test_login.py[line:35] -[login]-[日志信息]:开始执行第5用例
+2020-02-07 22:11:58,814-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/login
+2020-02-07 22:11:58,815-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'pwd': '123456'}
+2020-02-07 22:11:58,984-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":null,"msg":"登录成功"}
+2020-02-07 22:11:59,119-[INFO]-test_login.py[line:41] -[login]-[日志信息]:第5用例执行结果：PASS
+2020-02-07 22:11:59,120-[INFO]-test_login.py[line:35] -[login]-[日志信息]:开始执行第6用例
+2020-02-07 22:11:59,121-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/login
+2020-02-07 22:11:59,121-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287380', 'pwd': '123456', 'regname': 'nana'}
+2020-02-07 22:11:59,269-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20111","data":null,"msg":"用户名或密码错误"}
+2020-02-07 22:11:59,426-[INFO]-test_login.py[line:41] -[login]-[日志信息]:第6用例执行结果：PASS
+2020-02-07 22:11:59,427-[INFO]-test_login.py[line:35] -[login]-[日志信息]:开始执行第7用例
+2020-02-07 22:11:59,428-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/login
+2020-02-07 22:11:59,429-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '', 'pwd': '', 'regname': 'lili'}
+2020-02-07 22:11:59,439-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}
+2020-02-07 22:11:59,582-[INFO]-test_login.py[line:41] -[login]-[日志信息]:第7用例执行结果：PASS
+2020-02-07 22:11:59,582-[INFO]-test_login.py[line:35] -[login]-[日志信息]:开始执行第8用例
+2020-02-07 22:11:59,584-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/login
+2020-02-07 22:11:59,584-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'pwd': '123456', 'regname': 'ha'}
+2020-02-07 22:11:59,735-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":null,"msg":"登录成功"}
+2020-02-07 22:11:59,903-[INFO]-test_login.py[line:41] -[login]-[日志信息]:第8用例执行结果：PASS
+2020-02-07 22:11:59,904-[INFO]-test_login.py[line:35] -[login]-[日志信息]:开始执行第9用例
+2020-02-07 22:11:59,905-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/login
+2020-02-07 22:11:59,906-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'pwd': '123456', 'regname': 'nana'}
+2020-02-07 22:12:00,042-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":null,"msg":"登录成功"}
+2020-02-07 22:12:00,204-[INFO]-test_login.py[line:41] -[login]-[日志信息]:第9用例执行结果：PASS
+2020-02-07 22:12:00,205-[INFO]-test_login.py[line:35] -[login]-[日志信息]:开始执行第10用例
+2020-02-07 22:12:00,206-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/login
+2020-02-07 22:12:00,207-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'pwd': '123457', 'regname': 'nana'}
+2020-02-07 22:12:00,340-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20111","data":null,"msg":"用户名或密码错误"}
+2020-02-07 22:12:00,499-[INFO]-test_login.py[line:41] -[login]-[日志信息]:第10用例执行结果：PASS
+2020-02-07 22:12:00,500-[INFO]-test_login.py[line:35] -[login]-[日志信息]:开始执行第11用例
+2020-02-07 22:12:00,501-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/login
+2020-02-07 22:12:00,501-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'pwd': '', 'regname': 'nana'}
+2020-02-07 22:12:00,512-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20103","data":null,"msg":"密码不能为空"}
+2020-02-07 22:12:00,681-[INFO]-test_login.py[line:41] -[login]-[日志信息]:第11用例执行结果：PASS
+2020-02-07 22:12:00,681-[INFO]-test_login.py[line:35] -[login]-[日志信息]:开始执行第12用例
+2020-02-07 22:12:00,683-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/login
+2020-02-07 22:12:00,683-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '', 'pwd': '123456', 'regname': 'nana'}
+2020-02-07 22:12:00,694-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}
+2020-02-07 22:12:00,867-[INFO]-test_login.py[line:41] -[login]-[日志信息]:第12用例执行结果：PASS
+2020-02-07 22:12:00,868-[INFO]-test_login.py[line:35] -[login]-[日志信息]:开始执行第13用例
+2020-02-07 22:12:00,870-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/login
+2020-02-07 22:12:00,870-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'pwd': '123456'}
+2020-02-07 22:12:01,022-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":null,"msg":"登录成功"}
+2020-02-07 22:12:01,213-[INFO]-test_login.py[line:41] -[login]-[日志信息]:第13用例执行结果：PASS
+2020-02-07 22:12:01,215-[INFO]-test_login.py[line:35] -[login]-[日志信息]:开始执行第14用例
+2020-02-07 22:12:01,216-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/login
+2020-02-07 22:12:01,216-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287380', 'pwd': '123456', 'regname': 'nana'}
+2020-02-07 22:12:01,406-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20111","data":null,"msg":"用户名或密码错误"}
+2020-02-07 22:12:01,611-[INFO]-test_login.py[line:41] -[login]-[日志信息]:第14用例执行结果：PASS
+2020-02-07 22:12:01,612-[INFO]-test_login.py[line:35] -[login]-[日志信息]:开始执行第15用例
+2020-02-07 22:12:01,613-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/login
+2020-02-07 22:12:01,613-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '', 'pwd': '', 'regname': 'lili'}
+2020-02-07 22:12:01,624-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}
+2020-02-07 22:12:01,836-[INFO]-test_login.py[line:41] -[login]-[日志信息]:第15用例执行结果：PASS
+2020-02-07 22:12:01,837-[INFO]-test_login.py[line:35] -[login]-[日志信息]:开始执行第16用例
+2020-02-07 22:12:01,839-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/login
+2020-02-07 22:12:01,839-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'pwd': '123456', 'regname': 'ha'}
+2020-02-07 22:12:01,978-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":null,"msg":"登录成功"}
+2020-02-07 22:12:02,218-[INFO]-test_login.py[line:41] -[login]-[日志信息]:第16用例执行结果：PASS
+2020-02-07 22:12:02,254-[INFO]-test_rechaege1.py[line:33] -[recharge1]-[日志信息]:开始执行第1用例
+2020-02-07 22:12:02,256-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:02,256-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 50}
+2020-02-07 22:12:02,291-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":null,"data":null,"msg":"抱歉，请先登录。"}
+2020-02-07 22:12:02,292-[INFO]-test_rechaege1.py[line:36] -[recharge1]-[日志信息]:{"status":0,"code":null,"data":null,"msg":"抱歉，请先登录。"}
+2020-02-07 22:12:02,391-[INFO]-test_rechaege1.py[line:71] -[recharge1]-[日志信息]:第1用例执行结果：PASS
+2020-02-07 22:12:02,392-[INFO]-test_rechaege1.py[line:33] -[recharge1]-[日志信息]:开始执行第2用例
+2020-02-07 22:12:02,393-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/login
+2020-02-07 22:12:02,393-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'pwd': '123456'}
+2020-02-07 22:12:02,548-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":null,"msg":"登录成功"}
+2020-02-07 22:12:02,548-[INFO]-test_rechaege1.py[line:36] -[recharge1]-[日志信息]:{"status":1,"code":"10001","data":null,"msg":"登录成功"}
+2020-02-07 22:12:02,903-[INFO]-test_rechaege1.py[line:71] -[recharge1]-[日志信息]:第2用例执行结果：PASS
+2020-02-07 22:12:02,904-[INFO]-test_rechaege1.py[line:33] -[recharge1]-[日志信息]:开始执行第3用例
+2020-02-07 22:12:02,905-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:02,905-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 50}
+2020-02-07 22:12:03,407-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"102522009.38","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"充值成功"}
+2020-02-07 22:12:03,409-[INFO]-test_rechaege1.py[line:36] -[recharge1]-[日志信息]:{"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"102522009.38","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"充值成功"}
+2020-02-07 22:12:03,549-[INFO]-test_rechaege1.py[line:71] -[recharge1]-[日志信息]:第3用例执行结果：PASS
+2020-02-07 22:12:03,550-[INFO]-test_rechaege1.py[line:33] -[recharge1]-[日志信息]:开始执行第4用例
+2020-02-07 22:12:03,551-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:03,552-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '', 'amount': 50}
+2020-02-07 22:12:03,564-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}
+2020-02-07 22:12:03,564-[INFO]-test_rechaege1.py[line:36] -[recharge1]-[日志信息]:{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}
+2020-02-07 22:12:03,707-[INFO]-test_rechaege1.py[line:71] -[recharge1]-[日志信息]:第4用例执行结果：PASS
+2020-02-07 22:12:03,716-[INFO]-test_rechaege1.py[line:33] -[recharge1]-[日志信息]:开始执行第5用例
+2020-02-07 22:12:03,718-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:03,719-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '5617291', 'amount': 50}
+2020-02-07 22:12:03,733-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2020-02-07 22:12:03,733-[INFO]-test_rechaege1.py[line:36] -[recharge1]-[日志信息]:{"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2020-02-07 22:12:03,994-[INFO]-test_rechaege1.py[line:71] -[recharge1]-[日志信息]:第5用例执行结果：PASS
+2020-02-07 22:12:03,998-[INFO]-test_rechaege1.py[line:33] -[recharge1]-[日志信息]:开始执行第6用例
+2020-02-07 22:12:04,001-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:04,002-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287380', 'amount': 50}
+2020-02-07 22:12:04,191-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20104","data":null,"msg":"此手机号对应的会员不存在"}
+2020-02-07 22:12:04,192-[INFO]-test_rechaege1.py[line:36] -[recharge1]-[日志信息]:{"status":0,"code":"20104","data":null,"msg":"此手机号对应的会员不存在"}
+2020-02-07 22:12:04,455-[INFO]-test_rechaege1.py[line:71] -[recharge1]-[日志信息]:第6用例执行结果：PASS
+2020-02-07 22:12:04,457-[INFO]-test_rechaege1.py[line:33] -[recharge1]-[日志信息]:开始执行第7用例
+2020-02-07 22:12:04,458-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:04,459-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': ''}
+2020-02-07 22:12:04,472-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20115","data":null,"msg":"请输入金额"}
+2020-02-07 22:12:04,473-[INFO]-test_rechaege1.py[line:36] -[recharge1]-[日志信息]:{"status":0,"code":"20115","data":null,"msg":"请输入金额"}
+2020-02-07 22:12:04,620-[INFO]-test_rechaege1.py[line:71] -[recharge1]-[日志信息]:第7用例执行结果：PASS
+2020-02-07 22:12:04,621-[INFO]-test_rechaege1.py[line:33] -[recharge1]-[日志信息]:开始执行第8用例
+2020-02-07 22:12:04,622-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:04,622-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': -10}
+2020-02-07 22:12:04,636-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20117","data":null,"msg":"请输入范围在0到50万之间的正数金额"}
+2020-02-07 22:12:04,636-[INFO]-test_rechaege1.py[line:36] -[recharge1]-[日志信息]:{"status":0,"code":"20117","data":null,"msg":"请输入范围在0到50万之间的正数金额"}
+2020-02-07 22:12:04,791-[INFO]-test_rechaege1.py[line:71] -[recharge1]-[日志信息]:第8用例执行结果：PASS
+2020-02-07 22:12:04,791-[INFO]-test_rechaege1.py[line:33] -[recharge1]-[日志信息]:开始执行第9用例
+2020-02-07 22:12:04,793-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:04,793-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 0}
+2020-02-07 22:12:05,323-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"102522009.38","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"充值成功"}
+2020-02-07 22:12:05,326-[INFO]-test_rechaege1.py[line:36] -[recharge1]-[日志信息]:{"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"102522009.38","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"充值成功"}
+2020-02-07 22:12:05,493-[INFO]-test_rechaege1.py[line:71] -[recharge1]-[日志信息]:第9用例执行结果：PASS
+2020-02-07 22:12:05,494-[INFO]-test_rechaege1.py[line:33] -[recharge1]-[日志信息]:开始执行第10用例
+2020-02-07 22:12:05,496-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:05,496-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 500000}
+2020-02-07 22:12:06,042-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"103022009.38","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"充值成功"}
+2020-02-07 22:12:06,043-[INFO]-test_rechaege1.py[line:36] -[recharge1]-[日志信息]:{"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"103022009.38","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"充值成功"}
+2020-02-07 22:12:06,230-[INFO]-test_rechaege1.py[line:71] -[recharge1]-[日志信息]:第10用例执行结果：PASS
+2020-02-07 22:12:06,231-[INFO]-test_rechaege1.py[line:33] -[recharge1]-[日志信息]:开始执行第11用例
+2020-02-07 22:12:06,233-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:06,235-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 500001}
+2020-02-07 22:12:06,250-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20117","data":null,"msg":"请输入范围在0到50万之间的正数金额"}
+2020-02-07 22:12:06,253-[INFO]-test_rechaege1.py[line:36] -[recharge1]-[日志信息]:{"status":0,"code":"20117","data":null,"msg":"请输入范围在0到50万之间的正数金额"}
+2020-02-07 22:12:06,565-[INFO]-test_rechaege1.py[line:71] -[recharge1]-[日志信息]:第11用例执行结果：PASS
+2020-02-07 22:12:06,567-[INFO]-test_rechaege1.py[line:33] -[recharge1]-[日志信息]:开始执行第12用例
+2020-02-07 22:12:06,568-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:06,568-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': '五十'}
+2020-02-07 22:12:06,582-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20118","data":null,"msg":"请输入数字"}
+2020-02-07 22:12:06,583-[INFO]-test_rechaege1.py[line:36] -[recharge1]-[日志信息]:{"status":0,"code":"20118","data":null,"msg":"请输入数字"}
+2020-02-07 22:12:06,789-[INFO]-test_rechaege1.py[line:71] -[recharge1]-[日志信息]:第12用例执行结果：PASS
+2020-02-07 22:12:06,790-[INFO]-test_rechaege1.py[line:33] -[recharge1]-[日志信息]:开始执行第13用例
+2020-02-07 22:12:06,791-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:06,791-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '18877314371', 'amount': 50}
+2020-02-07 22:12:07,288-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":{"id":2113,"regname":"test_lemon_4122","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"18877314371","leaveamount":"6142.23","type":"1","regtime":"2019-05-15 13:20:42.0"},"msg":"充值成功"}
+2020-02-07 22:12:07,289-[INFO]-test_rechaege1.py[line:36] -[recharge1]-[日志信息]:{"status":1,"code":"10001","data":{"id":2113,"regname":"test_lemon_4122","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"18877314371","leaveamount":"6142.23","type":"1","regtime":"2019-05-15 13:20:42.0"},"msg":"充值成功"}
+2020-02-07 22:12:07,510-[INFO]-test_rechaege1.py[line:71] -[recharge1]-[日志信息]:第13用例执行结果：PASS
+2020-02-07 22:12:07,512-[INFO]-test_rechaege1.py[line:33] -[recharge1]-[日志信息]:开始执行第14用例
+2020-02-07 22:12:07,513-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:07,513-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '', 'amount': 50}
+2020-02-07 22:12:07,527-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}
+2020-02-07 22:12:07,528-[INFO]-test_rechaege1.py[line:36] -[recharge1]-[日志信息]:{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}
+2020-02-07 22:12:07,737-[INFO]-test_rechaege1.py[line:71] -[recharge1]-[日志信息]:第14用例执行结果：PASS
+2020-02-07 22:12:07,738-[INFO]-test_rechaege1.py[line:33] -[recharge1]-[日志信息]:开始执行第15用例
+2020-02-07 22:12:07,739-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:07,739-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 30.1}
+2020-02-07 22:12:08,190-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"103022039.48","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"充值成功"}
+2020-02-07 22:12:08,191-[INFO]-test_rechaege1.py[line:36] -[recharge1]-[日志信息]:{"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"103022039.48","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"充值成功"}
+2020-02-07 22:12:08,565-[INFO]-test_rechaege1.py[line:71] -[recharge1]-[日志信息]:第15用例执行结果：PASS
+2020-02-07 22:12:08,566-[INFO]-test_rechaege1.py[line:33] -[recharge1]-[日志信息]:开始执行第16用例
+2020-02-07 22:12:08,567-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:08,567-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 30.1}
+2020-02-07 22:12:09,028-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"103022069.58","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"充值成功"}
+2020-02-07 22:12:09,029-[INFO]-test_rechaege1.py[line:36] -[recharge1]-[日志信息]:{"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"103022069.58","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"充值成功"}
+2020-02-07 22:12:09,271-[INFO]-test_rechaege1.py[line:71] -[recharge1]-[日志信息]:第16用例执行结果：PASS
+2020-02-07 22:12:09,272-[INFO]-test_rechaege1.py[line:33] -[recharge1]-[日志信息]:开始执行第17用例
+2020-02-07 22:12:09,273-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:09,273-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 30.569}
+2020-02-07 22:12:09,286-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20116","data":null,"msg":"输入金额的金额小数不能超过两位"}
+2020-02-07 22:12:09,286-[INFO]-test_rechaege1.py[line:36] -[recharge1]-[日志信息]:{"status":0,"code":"20116","data":null,"msg":"输入金额的金额小数不能超过两位"}
+2020-02-07 22:12:09,526-[INFO]-test_rechaege1.py[line:71] -[recharge1]-[日志信息]:第17用例执行结果：PASS
+2020-02-07 22:12:09,527-[INFO]-test_rechaege1.py[line:33] -[recharge1]-[日志信息]:开始执行第18用例
+2020-02-07 22:12:09,528-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/login
+2020-02-07 22:12:09,529-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'pwd': '123456'}
+2020-02-07 22:12:09,683-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":null,"msg":"登录成功"}
+2020-02-07 22:12:09,685-[INFO]-test_rechaege1.py[line:36] -[recharge1]-[日志信息]:{"status":1,"code":"10001","data":null,"msg":"登录成功"}
+2020-02-07 22:12:10,073-[INFO]-test_rechaege1.py[line:71] -[recharge1]-[日志信息]:第18用例执行结果：PASS
+2020-02-07 22:12:10,074-[INFO]-test_rechaege1.py[line:33] -[recharge1]-[日志信息]:开始执行第19用例
+2020-02-07 22:12:10,075-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:10,075-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 50}
+2020-02-07 22:12:10,531-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"103022119.58","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"充值成功"}
+2020-02-07 22:12:10,532-[INFO]-test_rechaege1.py[line:36] -[recharge1]-[日志信息]:{"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"103022119.58","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"充值成功"}
+2020-02-07 22:12:10,826-[INFO]-test_rechaege1.py[line:71] -[recharge1]-[日志信息]:第19用例执行结果：PASS
+2020-02-07 22:12:10,827-[INFO]-test_rechaege1.py[line:33] -[recharge1]-[日志信息]:开始执行第20用例
+2020-02-07 22:12:10,828-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:10,829-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '', 'amount': 50}
+2020-02-07 22:12:10,841-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}
+2020-02-07 22:12:10,842-[INFO]-test_rechaege1.py[line:36] -[recharge1]-[日志信息]:{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}
+2020-02-07 22:12:11,122-[INFO]-test_rechaege1.py[line:71] -[recharge1]-[日志信息]:第20用例执行结果：PASS
+2020-02-07 22:12:11,123-[INFO]-test_rechaege1.py[line:33] -[recharge1]-[日志信息]:开始执行第21用例
+2020-02-07 22:12:11,124-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:11,125-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '5617291', 'amount': 50}
+2020-02-07 22:12:11,137-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2020-02-07 22:12:11,138-[INFO]-test_rechaege1.py[line:36] -[recharge1]-[日志信息]:{"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2020-02-07 22:12:11,427-[INFO]-test_rechaege1.py[line:71] -[recharge1]-[日志信息]:第21用例执行结果：PASS
+2020-02-07 22:12:11,428-[INFO]-test_rechaege1.py[line:33] -[recharge1]-[日志信息]:开始执行第22用例
+2020-02-07 22:12:11,429-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:11,429-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287380', 'amount': 50}
+2020-02-07 22:12:11,572-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20104","data":null,"msg":"此手机号对应的会员不存在"}
+2020-02-07 22:12:11,573-[INFO]-test_rechaege1.py[line:36] -[recharge1]-[日志信息]:{"status":0,"code":"20104","data":null,"msg":"此手机号对应的会员不存在"}
+2020-02-07 22:12:11,885-[INFO]-test_rechaege1.py[line:71] -[recharge1]-[日志信息]:第22用例执行结果：PASS
+2020-02-07 22:12:11,886-[INFO]-test_rechaege1.py[line:33] -[recharge1]-[日志信息]:开始执行第23用例
+2020-02-07 22:12:11,888-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:11,889-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': ''}
+2020-02-07 22:12:11,901-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20115","data":null,"msg":"请输入金额"}
+2020-02-07 22:12:11,902-[INFO]-test_rechaege1.py[line:36] -[recharge1]-[日志信息]:{"status":0,"code":"20115","data":null,"msg":"请输入金额"}
+2020-02-07 22:12:12,238-[INFO]-test_rechaege1.py[line:71] -[recharge1]-[日志信息]:第23用例执行结果：PASS
+2020-02-07 22:12:12,239-[INFO]-test_rechaege1.py[line:33] -[recharge1]-[日志信息]:开始执行第24用例
+2020-02-07 22:12:12,240-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:12,241-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': -10}
+2020-02-07 22:12:12,253-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20117","data":null,"msg":"请输入范围在0到50万之间的正数金额"}
+2020-02-07 22:12:12,254-[INFO]-test_rechaege1.py[line:36] -[recharge1]-[日志信息]:{"status":0,"code":"20117","data":null,"msg":"请输入范围在0到50万之间的正数金额"}
+2020-02-07 22:12:12,772-[INFO]-test_rechaege1.py[line:71] -[recharge1]-[日志信息]:第24用例执行结果：PASS
+2020-02-07 22:12:12,774-[INFO]-test_rechaege1.py[line:33] -[recharge1]-[日志信息]:开始执行第25用例
+2020-02-07 22:12:12,778-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:12,779-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 0}
+2020-02-07 22:12:13,239-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"103022119.58","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"充值成功"}
+2020-02-07 22:12:13,240-[INFO]-test_rechaege1.py[line:36] -[recharge1]-[日志信息]:{"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"103022119.58","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"充值成功"}
+2020-02-07 22:12:13,631-[INFO]-test_rechaege1.py[line:71] -[recharge1]-[日志信息]:第25用例执行结果：PASS
+2020-02-07 22:12:13,632-[INFO]-test_rechaege1.py[line:33] -[recharge1]-[日志信息]:开始执行第26用例
+2020-02-07 22:12:13,633-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:13,633-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 500000}
+2020-02-07 22:12:14,137-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"103522119.58","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"充值成功"}
+2020-02-07 22:12:14,138-[INFO]-test_rechaege1.py[line:36] -[recharge1]-[日志信息]:{"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"103522119.58","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"充值成功"}
+2020-02-07 22:12:14,517-[INFO]-test_rechaege1.py[line:71] -[recharge1]-[日志信息]:第26用例执行结果：PASS
+2020-02-07 22:12:14,518-[INFO]-test_rechaege1.py[line:33] -[recharge1]-[日志信息]:开始执行第27用例
+2020-02-07 22:12:14,519-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:14,520-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 500001}
+2020-02-07 22:12:14,531-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20117","data":null,"msg":"请输入范围在0到50万之间的正数金额"}
+2020-02-07 22:12:14,532-[INFO]-test_rechaege1.py[line:36] -[recharge1]-[日志信息]:{"status":0,"code":"20117","data":null,"msg":"请输入范围在0到50万之间的正数金额"}
+2020-02-07 22:12:14,984-[INFO]-test_rechaege1.py[line:71] -[recharge1]-[日志信息]:第27用例执行结果：PASS
+2020-02-07 22:12:14,986-[INFO]-test_rechaege1.py[line:33] -[recharge1]-[日志信息]:开始执行第28用例
+2020-02-07 22:12:14,987-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:14,988-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': '五十'}
+2020-02-07 22:12:15,005-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20118","data":null,"msg":"请输入数字"}
+2020-02-07 22:12:15,006-[INFO]-test_rechaege1.py[line:36] -[recharge1]-[日志信息]:{"status":0,"code":"20118","data":null,"msg":"请输入数字"}
+2020-02-07 22:12:15,578-[INFO]-test_rechaege1.py[line:71] -[recharge1]-[日志信息]:第28用例执行结果：PASS
+2020-02-07 22:12:15,579-[INFO]-test_rechaege1.py[line:33] -[recharge1]-[日志信息]:开始执行第29用例
+2020-02-07 22:12:15,581-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:15,581-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '18877314371', 'amount': '50'}
+2020-02-07 22:12:16,026-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":{"id":2113,"regname":"test_lemon_4122","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"18877314371","leaveamount":"6192.23","type":"1","regtime":"2019-05-15 13:20:42.0"},"msg":"充值成功"}
+2020-02-07 22:12:16,026-[INFO]-test_rechaege1.py[line:36] -[recharge1]-[日志信息]:{"status":1,"code":"10001","data":{"id":2113,"regname":"test_lemon_4122","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"18877314371","leaveamount":"6192.23","type":"1","regtime":"2019-05-15 13:20:42.0"},"msg":"充值成功"}
+2020-02-07 22:12:16,456-[INFO]-test_rechaege1.py[line:71] -[recharge1]-[日志信息]:第29用例执行结果：PASS
+2020-02-07 22:12:16,457-[INFO]-test_rechaege1.py[line:33] -[recharge1]-[日志信息]:开始执行第30用例
+2020-02-07 22:12:16,458-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:16,459-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '', 'amount': 50}
+2020-02-07 22:12:16,472-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}
+2020-02-07 22:12:16,473-[INFO]-test_rechaege1.py[line:36] -[recharge1]-[日志信息]:{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}
+2020-02-07 22:12:16,921-[INFO]-test_rechaege1.py[line:71] -[recharge1]-[日志信息]:第30用例执行结果：PASS
+2020-02-07 22:12:16,922-[INFO]-test_rechaege1.py[line:33] -[recharge1]-[日志信息]:开始执行第31用例
+2020-02-07 22:12:16,924-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:16,924-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 30.1}
+2020-02-07 22:12:17,543-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"103522149.68","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"充值成功"}
+2020-02-07 22:12:17,544-[INFO]-test_rechaege1.py[line:36] -[recharge1]-[日志信息]:{"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"103522149.68","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"充值成功"}
+2020-02-07 22:12:18,026-[INFO]-test_rechaege1.py[line:71] -[recharge1]-[日志信息]:第31用例执行结果：PASS
+2020-02-07 22:12:18,029-[INFO]-test_rechaege1.py[line:33] -[recharge1]-[日志信息]:开始执行第32用例
+2020-02-07 22:12:18,030-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:18,030-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 30.1}
+2020-02-07 22:12:18,544-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"103522179.78","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"充值成功"}
+2020-02-07 22:12:18,545-[INFO]-test_rechaege1.py[line:36] -[recharge1]-[日志信息]:{"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"103522179.78","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"充值成功"}
+2020-02-07 22:12:19,130-[INFO]-test_rechaege1.py[line:71] -[recharge1]-[日志信息]:第32用例执行结果：PASS
+2020-02-07 22:12:19,131-[INFO]-test_rechaege1.py[line:33] -[recharge1]-[日志信息]:开始执行第33用例
+2020-02-07 22:12:19,132-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:19,133-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 30.569}
+2020-02-07 22:12:19,145-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20116","data":null,"msg":"输入金额的金额小数不能超过两位"}
+2020-02-07 22:12:19,145-[INFO]-test_rechaege1.py[line:36] -[recharge1]-[日志信息]:{"status":0,"code":"20116","data":null,"msg":"输入金额的金额小数不能超过两位"}
+2020-02-07 22:12:19,655-[INFO]-test_rechaege1.py[line:71] -[recharge1]-[日志信息]:第33用例执行结果：PASS
+2020-02-07 22:12:19,729-[INFO]-test_recharge.py[line:37] -[recharge]-[日志信息]:开始执行第1用例
+2020-02-07 22:12:19,730-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:19,731-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 50}
+2020-02-07 22:12:19,761-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":null,"data":null,"msg":"抱歉，请先登录。"}
+2020-02-07 22:12:19,863-[INFO]-test_recharge.py[line:75] -[recharge]-[日志信息]:第1用例执行结果：PASS
+2020-02-07 22:12:19,864-[INFO]-test_recharge.py[line:37] -[recharge]-[日志信息]:开始执行第2用例
+2020-02-07 22:12:19,867-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/login
+2020-02-07 22:12:19,867-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'pwd': '123456'}
+2020-02-07 22:12:20,124-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":null,"msg":"登录成功"}
+2020-02-07 22:12:20,528-[INFO]-test_recharge.py[line:75] -[recharge]-[日志信息]:第2用例执行结果：PASS
+2020-02-07 22:12:20,529-[INFO]-test_recharge.py[line:37] -[recharge]-[日志信息]:开始执行第3用例
+2020-02-07 22:12:20,530-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:20,531-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 50}
+2020-02-07 22:12:21,251-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"103522229.78","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"充值成功"}
+2020-02-07 22:12:21,371-[INFO]-test_recharge.py[line:75] -[recharge]-[日志信息]:第3用例执行结果：PASS
+2020-02-07 22:12:21,372-[INFO]-test_recharge.py[line:37] -[recharge]-[日志信息]:开始执行第4用例
+2020-02-07 22:12:21,373-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:21,373-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '', 'amount': 50}
+2020-02-07 22:12:21,384-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}
+2020-02-07 22:12:21,492-[INFO]-test_recharge.py[line:75] -[recharge]-[日志信息]:第4用例执行结果：PASS
+2020-02-07 22:12:21,493-[INFO]-test_recharge.py[line:37] -[recharge]-[日志信息]:开始执行第5用例
+2020-02-07 22:12:21,494-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:21,494-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '5617291', 'amount': 50}
+2020-02-07 22:12:21,505-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2020-02-07 22:12:21,627-[INFO]-test_recharge.py[line:75] -[recharge]-[日志信息]:第5用例执行结果：PASS
+2020-02-07 22:12:21,628-[INFO]-test_recharge.py[line:37] -[recharge]-[日志信息]:开始执行第6用例
+2020-02-07 22:12:21,629-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:21,630-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287380', 'amount': 50}
+2020-02-07 22:12:21,779-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20104","data":null,"msg":"此手机号对应的会员不存在"}
+2020-02-07 22:12:21,904-[INFO]-test_recharge.py[line:75] -[recharge]-[日志信息]:第6用例执行结果：PASS
+2020-02-07 22:12:21,905-[INFO]-test_recharge.py[line:37] -[recharge]-[日志信息]:开始执行第7用例
+2020-02-07 22:12:21,906-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:21,906-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': ''}
+2020-02-07 22:12:21,917-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20115","data":null,"msg":"请输入金额"}
+2020-02-07 22:12:22,051-[INFO]-test_recharge.py[line:75] -[recharge]-[日志信息]:第7用例执行结果：PASS
+2020-02-07 22:12:22,052-[INFO]-test_recharge.py[line:37] -[recharge]-[日志信息]:开始执行第8用例
+2020-02-07 22:12:22,054-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:22,055-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': -10}
+2020-02-07 22:12:22,066-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20117","data":null,"msg":"请输入范围在0到50万之间的正数金额"}
+2020-02-07 22:12:22,253-[INFO]-test_recharge.py[line:75] -[recharge]-[日志信息]:第8用例执行结果：PASS
+2020-02-07 22:12:22,255-[INFO]-test_recharge.py[line:37] -[recharge]-[日志信息]:开始执行第9用例
+2020-02-07 22:12:22,256-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:22,256-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 0}
+2020-02-07 22:12:22,663-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"103522229.78","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"充值成功"}
+2020-02-07 22:12:22,843-[INFO]-test_recharge.py[line:75] -[recharge]-[日志信息]:第9用例执行结果：PASS
+2020-02-07 22:12:22,845-[INFO]-test_recharge.py[line:37] -[recharge]-[日志信息]:开始执行第10用例
+2020-02-07 22:12:22,846-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:22,846-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 500000}
+2020-02-07 22:12:23,336-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"104022229.78","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"充值成功"}
+2020-02-07 22:12:23,564-[INFO]-test_recharge.py[line:75] -[recharge]-[日志信息]:第10用例执行结果：PASS
+2020-02-07 22:12:23,565-[INFO]-test_recharge.py[line:37] -[recharge]-[日志信息]:开始执行第11用例
+2020-02-07 22:12:23,566-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:23,567-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 500001}
+2020-02-07 22:12:23,580-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20117","data":null,"msg":"请输入范围在0到50万之间的正数金额"}
+2020-02-07 22:12:23,753-[INFO]-test_recharge.py[line:75] -[recharge]-[日志信息]:第11用例执行结果：PASS
+2020-02-07 22:12:23,754-[INFO]-test_recharge.py[line:37] -[recharge]-[日志信息]:开始执行第12用例
+2020-02-07 22:12:23,755-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:23,756-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': '五十'}
+2020-02-07 22:12:23,766-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20118","data":null,"msg":"请输入数字"}
+2020-02-07 22:12:23,955-[INFO]-test_recharge.py[line:75] -[recharge]-[日志信息]:第12用例执行结果：PASS
+2020-02-07 22:12:23,956-[INFO]-test_recharge.py[line:37] -[recharge]-[日志信息]:开始执行第13用例
+2020-02-07 22:12:23,957-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:23,957-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '18877314371', 'amount': 50}
+2020-02-07 22:12:24,432-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":{"id":2113,"regname":"test_lemon_4122","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"18877314371","leaveamount":"6242.23","type":"1","regtime":"2019-05-15 13:20:42.0"},"msg":"充值成功"}
+2020-02-07 22:12:24,637-[INFO]-test_recharge.py[line:75] -[recharge]-[日志信息]:第13用例执行结果：PASS
+2020-02-07 22:12:24,638-[INFO]-test_recharge.py[line:37] -[recharge]-[日志信息]:开始执行第14用例
+2020-02-07 22:12:24,639-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:24,640-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '', 'amount': 50}
+2020-02-07 22:12:24,652-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}
+2020-02-07 22:12:24,843-[INFO]-test_recharge.py[line:75] -[recharge]-[日志信息]:第14用例执行结果：PASS
+2020-02-07 22:12:24,844-[INFO]-test_recharge.py[line:37] -[recharge]-[日志信息]:开始执行第15用例
+2020-02-07 22:12:24,846-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:24,846-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 30.1}
+2020-02-07 22:12:25,302-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"104022259.88","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"充值成功"}
+2020-02-07 22:12:25,504-[INFO]-test_recharge.py[line:75] -[recharge]-[日志信息]:第15用例执行结果：PASS
+2020-02-07 22:12:25,505-[INFO]-test_recharge.py[line:37] -[recharge]-[日志信息]:开始执行第16用例
+2020-02-07 22:12:25,506-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:25,506-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 30.1}
+2020-02-07 22:12:25,945-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"104022289.98","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"充值成功"}
+2020-02-07 22:12:26,196-[INFO]-test_recharge.py[line:75] -[recharge]-[日志信息]:第16用例执行结果：PASS
+2020-02-07 22:12:26,197-[INFO]-test_recharge.py[line:37] -[recharge]-[日志信息]:开始执行第17用例
+2020-02-07 22:12:26,199-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:26,199-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 30.569}
+2020-02-07 22:12:26,209-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20116","data":null,"msg":"输入金额的金额小数不能超过两位"}
+2020-02-07 22:12:26,458-[INFO]-test_recharge.py[line:75] -[recharge]-[日志信息]:第17用例执行结果：PASS
+2020-02-07 22:12:26,459-[INFO]-test_recharge.py[line:37] -[recharge]-[日志信息]:开始执行第18用例
+2020-02-07 22:12:26,460-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/login
+2020-02-07 22:12:26,460-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'pwd': '123456'}
+2020-02-07 22:12:26,611-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":null,"msg":"登录成功"}
+2020-02-07 22:12:27,029-[INFO]-test_recharge.py[line:75] -[recharge]-[日志信息]:第18用例执行结果：PASS
+2020-02-07 22:12:27,030-[INFO]-test_recharge.py[line:37] -[recharge]-[日志信息]:开始执行第19用例
+2020-02-07 22:12:27,032-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:27,032-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 50}
+2020-02-07 22:12:27,459-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"104022339.98","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"充值成功"}
+2020-02-07 22:12:27,721-[INFO]-test_recharge.py[line:75] -[recharge]-[日志信息]:第19用例执行结果：PASS
+2020-02-07 22:12:27,722-[INFO]-test_recharge.py[line:37] -[recharge]-[日志信息]:开始执行第20用例
+2020-02-07 22:12:27,723-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:27,724-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '', 'amount': 50}
+2020-02-07 22:12:27,734-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}
+2020-02-07 22:12:28,025-[INFO]-test_recharge.py[line:75] -[recharge]-[日志信息]:第20用例执行结果：PASS
+2020-02-07 22:12:28,026-[INFO]-test_recharge.py[line:37] -[recharge]-[日志信息]:开始执行第21用例
+2020-02-07 22:12:28,028-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:28,028-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '5617291', 'amount': 50}
+2020-02-07 22:12:28,041-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2020-02-07 22:12:28,335-[INFO]-test_recharge.py[line:75] -[recharge]-[日志信息]:第21用例执行结果：PASS
+2020-02-07 22:12:28,336-[INFO]-test_recharge.py[line:37] -[recharge]-[日志信息]:开始执行第22用例
+2020-02-07 22:12:28,337-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:28,338-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287380', 'amount': 50}
+2020-02-07 22:12:28,478-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20104","data":null,"msg":"此手机号对应的会员不存在"}
+2020-02-07 22:12:28,778-[INFO]-test_recharge.py[line:75] -[recharge]-[日志信息]:第22用例执行结果：PASS
+2020-02-07 22:12:28,779-[INFO]-test_recharge.py[line:37] -[recharge]-[日志信息]:开始执行第23用例
+2020-02-07 22:12:28,780-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:28,781-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': ''}
+2020-02-07 22:12:28,791-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20115","data":null,"msg":"请输入金额"}
+2020-02-07 22:12:29,102-[INFO]-test_recharge.py[line:75] -[recharge]-[日志信息]:第23用例执行结果：PASS
+2020-02-07 22:12:29,103-[INFO]-test_recharge.py[line:37] -[recharge]-[日志信息]:开始执行第24用例
+2020-02-07 22:12:29,104-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:29,105-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': -10}
+2020-02-07 22:12:29,116-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20117","data":null,"msg":"请输入范围在0到50万之间的正数金额"}
+2020-02-07 22:12:29,444-[INFO]-test_recharge.py[line:75] -[recharge]-[日志信息]:第24用例执行结果：PASS
+2020-02-07 22:12:29,445-[INFO]-test_recharge.py[line:37] -[recharge]-[日志信息]:开始执行第25用例
+2020-02-07 22:12:29,446-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:29,447-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 0}
+2020-02-07 22:12:29,898-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"104022339.98","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"充值成功"}
+2020-02-07 22:12:30,270-[INFO]-test_recharge.py[line:75] -[recharge]-[日志信息]:第25用例执行结果：PASS
+2020-02-07 22:12:30,271-[INFO]-test_recharge.py[line:37] -[recharge]-[日志信息]:开始执行第26用例
+2020-02-07 22:12:30,272-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:30,272-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 500000}
+2020-02-07 22:12:30,710-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"104522339.98","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"充值成功"}
+2020-02-07 22:12:31,079-[INFO]-test_recharge.py[line:75] -[recharge]-[日志信息]:第26用例执行结果：PASS
+2020-02-07 22:12:31,080-[INFO]-test_recharge.py[line:37] -[recharge]-[日志信息]:开始执行第27用例
+2020-02-07 22:12:31,081-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:31,081-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 500001}
+2020-02-07 22:12:31,091-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20117","data":null,"msg":"请输入范围在0到50万之间的正数金额"}
+2020-02-07 22:12:31,467-[INFO]-test_recharge.py[line:75] -[recharge]-[日志信息]:第27用例执行结果：PASS
+2020-02-07 22:12:31,468-[INFO]-test_recharge.py[line:37] -[recharge]-[日志信息]:开始执行第28用例
+2020-02-07 22:12:31,469-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:31,470-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': '五十'}
+2020-02-07 22:12:31,480-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20118","data":null,"msg":"请输入数字"}
+2020-02-07 22:12:31,876-[INFO]-test_recharge.py[line:75] -[recharge]-[日志信息]:第28用例执行结果：PASS
+2020-02-07 22:12:31,877-[INFO]-test_recharge.py[line:37] -[recharge]-[日志信息]:开始执行第29用例
+2020-02-07 22:12:31,878-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:31,878-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '18877314371', 'amount': '50'}
+2020-02-07 22:12:32,351-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":{"id":2113,"regname":"test_lemon_4122","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"18877314371","leaveamount":"6292.23","type":"1","regtime":"2019-05-15 13:20:42.0"},"msg":"充值成功"}
+2020-02-07 22:12:32,779-[INFO]-test_recharge.py[line:75] -[recharge]-[日志信息]:第29用例执行结果：PASS
+2020-02-07 22:12:32,780-[INFO]-test_recharge.py[line:37] -[recharge]-[日志信息]:开始执行第30用例
+2020-02-07 22:12:32,781-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:32,781-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '', 'amount': 50}
+2020-02-07 22:12:32,792-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}
+2020-02-07 22:12:33,238-[INFO]-test_recharge.py[line:75] -[recharge]-[日志信息]:第30用例执行结果：PASS
+2020-02-07 22:12:33,239-[INFO]-test_recharge.py[line:37] -[recharge]-[日志信息]:开始执行第31用例
+2020-02-07 22:12:33,240-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:33,241-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 30.1}
+2020-02-07 22:12:33,697-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"104522370.08","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"充值成功"}
+2020-02-07 22:12:34,138-[INFO]-test_recharge.py[line:75] -[recharge]-[日志信息]:第31用例执行结果：PASS
+2020-02-07 22:12:34,140-[INFO]-test_recharge.py[line:37] -[recharge]-[日志信息]:开始执行第32用例
+2020-02-07 22:12:34,143-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:34,143-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 30.1}
+2020-02-07 22:12:34,620-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"104522400.18","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"充值成功"}
+2020-02-07 22:12:35,101-[INFO]-test_recharge.py[line:75] -[recharge]-[日志信息]:第32用例执行结果：PASS
+2020-02-07 22:12:35,102-[INFO]-test_recharge.py[line:37] -[recharge]-[日志信息]:开始执行第33用例
+2020-02-07 22:12:35,103-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
+2020-02-07 22:12:35,103-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 30.569}
+2020-02-07 22:12:35,114-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20116","data":null,"msg":"输入金额的金额小数不能超过两位"}
+2020-02-07 22:12:35,570-[INFO]-test_recharge.py[line:75] -[recharge]-[日志信息]:第33用例执行结果：PASS
+2020-02-07 22:12:35,729-[INFO]-test_register.py[line:21] -[register]-[日志信息]:13799995033
+2020-02-07 22:12:35,729-[INFO]-test_register.py[line:30] -[register]-[日志信息]:开始执行第1用例
+2020-02-07 22:12:35,730-[INFO]-test_register.py[line:35] -[register]-[日志信息]:{'mobilephone': 13799995033, 'pwd': '123456', 'regname': 'huahua'}
+2020-02-07 22:12:35,731-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/register
+2020-02-07 22:12:35,732-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': 13799995033, 'pwd': '123456', 'regname': 'huahua'}
+2020-02-07 22:12:35,904-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":null,"msg":"注册成功"}
+2020-02-07 22:12:35,905-[INFO]-test_register.py[line:37] -[register]-[日志信息]:{"status":1,"code":"10001","data":null,"msg":"注册成功"}
+2020-02-07 22:12:36,128-[INFO]-test_register.py[line:62] -[register]-[日志信息]:第1用例执行结果：PASS
+2020-02-07 22:12:36,129-[INFO]-test_register.py[line:69] -[register]-[日志信息]:用例执行结束
+2020-02-07 22:12:36,250-[INFO]-test_register.py[line:21] -[register]-[日志信息]:13799995034
+2020-02-07 22:12:36,251-[INFO]-test_register.py[line:30] -[register]-[日志信息]:开始执行第2用例
+2020-02-07 22:12:36,254-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/register
+2020-02-07 22:12:36,255-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '', 'pwd': '123456', 'regname': None}
+2020-02-07 22:12:36,269-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}
+2020-02-07 22:12:36,270-[INFO]-test_register.py[line:37] -[register]-[日志信息]:{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}
+2020-02-07 22:12:36,391-[INFO]-test_register.py[line:62] -[register]-[日志信息]:第2用例执行结果：PASS
+2020-02-07 22:12:36,391-[INFO]-test_register.py[line:69] -[register]-[日志信息]:用例执行结束
+2020-02-07 22:12:36,523-[INFO]-test_register.py[line:21] -[register]-[日志信息]:13799995034
+2020-02-07 22:12:36,524-[INFO]-test_register.py[line:30] -[register]-[日志信息]:开始执行第3用例
+2020-02-07 22:12:36,527-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/register
+2020-02-07 22:12:36,530-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '18877314371', 'pwd': '123456', 'regname': 'huahua'}
+2020-02-07 22:12:36,681-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20110","data":null,"msg":"手机号码已被注册"}
+2020-02-07 22:12:36,682-[INFO]-test_register.py[line:37] -[register]-[日志信息]:{"status":0,"code":"20110","data":null,"msg":"手机号码已被注册"}
+2020-02-07 22:12:36,801-[INFO]-test_register.py[line:62] -[register]-[日志信息]:第3用例执行结果：PASS
+2020-02-07 22:12:36,801-[INFO]-test_register.py[line:69] -[register]-[日志信息]:用例执行结束
+2020-02-07 22:12:36,934-[INFO]-test_register.py[line:21] -[register]-[日志信息]:13799995034
+2020-02-07 22:12:36,936-[INFO]-test_register.py[line:30] -[register]-[日志信息]:开始执行第4用例
+2020-02-07 22:12:36,938-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/register
+2020-02-07 22:12:36,939-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '188773143723', 'pwd': '123456', 'regname': 'huahua'}
+2020-02-07 22:12:36,949-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2020-02-07 22:12:36,950-[INFO]-test_register.py[line:37] -[register]-[日志信息]:{"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2020-02-07 22:12:37,077-[INFO]-test_register.py[line:62] -[register]-[日志信息]:第4用例执行结果：PASS
+2020-02-07 22:12:37,078-[INFO]-test_register.py[line:69] -[register]-[日志信息]:用例执行结束
+2020-02-07 22:12:37,194-[INFO]-test_register.py[line:21] -[register]-[日志信息]:13799995034
+2020-02-07 22:12:37,194-[INFO]-test_register.py[line:30] -[register]-[日志信息]:开始执行第5用例
+2020-02-07 22:12:37,196-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/register
+2020-02-07 22:12:37,196-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '1887731437', 'pwd': '123456', 'regname': 'huahua'}
+2020-02-07 22:12:37,206-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2020-02-07 22:12:37,207-[INFO]-test_register.py[line:37] -[register]-[日志信息]:{"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2020-02-07 22:12:37,326-[INFO]-test_register.py[line:62] -[register]-[日志信息]:第5用例执行结果：PASS
+2020-02-07 22:12:37,326-[INFO]-test_register.py[line:69] -[register]-[日志信息]:用例执行结束
+2020-02-07 22:12:37,480-[INFO]-test_register.py[line:21] -[register]-[日志信息]:13799995034
+2020-02-07 22:12:37,481-[INFO]-test_register.py[line:30] -[register]-[日志信息]:开始执行第6用例
+2020-02-07 22:12:37,482-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/register
+2020-02-07 22:12:37,483-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '1778980034', 'pwd': '123456', 'regname': 'huahua'}
+2020-02-07 22:12:37,493-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2020-02-07 22:12:37,494-[INFO]-test_register.py[line:37] -[register]-[日志信息]:{"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2020-02-07 22:12:37,627-[INFO]-test_register.py[line:62] -[register]-[日志信息]:第6用例执行结果：PASS
+2020-02-07 22:12:37,627-[INFO]-test_register.py[line:69] -[register]-[日志信息]:用例执行结束
+2020-02-07 22:12:37,748-[INFO]-test_register.py[line:21] -[register]-[日志信息]:13799995034
+2020-02-07 22:12:37,748-[INFO]-test_register.py[line:30] -[register]-[日志信息]:开始执行第7用例
+2020-02-07 22:12:37,750-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/register
+2020-02-07 22:12:37,750-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '12345678901', 'pwd': '123456', 'regname': 'huahua'}
+2020-02-07 22:12:37,761-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2020-02-07 22:12:37,761-[INFO]-test_register.py[line:37] -[register]-[日志信息]:{"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2020-02-07 22:12:37,896-[INFO]-test_register.py[line:62] -[register]-[日志信息]:第7用例执行结果：PASS
+2020-02-07 22:12:37,896-[INFO]-test_register.py[line:69] -[register]-[日志信息]:用例执行结束
+2020-02-07 22:12:38,017-[INFO]-test_register.py[line:21] -[register]-[日志信息]:13799995034
+2020-02-07 22:12:38,017-[INFO]-test_register.py[line:30] -[register]-[日志信息]:开始执行第8用例
+2020-02-07 22:12:38,018-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/register
+2020-02-07 22:12:38,019-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '18877314372', 'pwd': '', 'regname': 'huahua'}
+2020-02-07 22:12:38,030-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20103","data":null,"msg":"密码不能为空"}
+2020-02-07 22:12:38,030-[INFO]-test_register.py[line:37] -[register]-[日志信息]:{"status":0,"code":"20103","data":null,"msg":"密码不能为空"}
+2020-02-07 22:12:38,170-[INFO]-test_register.py[line:62] -[register]-[日志信息]:第8用例执行结果：PASS
+2020-02-07 22:12:38,171-[INFO]-test_register.py[line:69] -[register]-[日志信息]:用例执行结束
+2020-02-07 22:12:38,287-[INFO]-test_register.py[line:21] -[register]-[日志信息]:13799995034
+2020-02-07 22:12:38,288-[INFO]-test_register.py[line:30] -[register]-[日志信息]:开始执行第9用例
+2020-02-07 22:12:38,289-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/register
+2020-02-07 22:12:38,290-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '18877314372', 'pwd': '12345', 'regname': 'huahua'}
+2020-02-07 22:12:38,301-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20108","data":null,"msg":"密码长度必须为6~18"}
+2020-02-07 22:12:38,302-[INFO]-test_register.py[line:37] -[register]-[日志信息]:{"status":0,"code":"20108","data":null,"msg":"密码长度必须为6~18"}
+2020-02-07 22:12:38,447-[INFO]-test_register.py[line:62] -[register]-[日志信息]:第9用例执行结果：PASS
+2020-02-07 22:12:38,448-[INFO]-test_register.py[line:69] -[register]-[日志信息]:用例执行结束
+2020-02-07 22:12:38,573-[INFO]-test_register.py[line:21] -[register]-[日志信息]:13799995034
+2020-02-07 22:12:38,573-[INFO]-test_register.py[line:30] -[register]-[日志信息]:开始执行第10用例
+2020-02-07 22:12:38,574-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/register
+2020-02-07 22:12:38,575-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '18877314372', 'pwd': '1234567890123456789', 'regname': 'huahua'}
+2020-02-07 22:12:38,585-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20108","data":null,"msg":"密码长度必须为6~18"}
+2020-02-07 22:12:38,585-[INFO]-test_register.py[line:37] -[register]-[日志信息]:{"status":0,"code":"20108","data":null,"msg":"密码长度必须为6~18"}
+2020-02-07 22:12:38,743-[INFO]-test_register.py[line:62] -[register]-[日志信息]:第10用例执行结果：PASS
+2020-02-07 22:12:38,743-[INFO]-test_register.py[line:69] -[register]-[日志信息]:用例执行结束
+2020-02-07 22:12:38,866-[INFO]-test_register.py[line:21] -[register]-[日志信息]:13799995034
+2020-02-07 22:12:38,866-[INFO]-test_register.py[line:30] -[register]-[日志信息]:开始执行第11用例
+2020-02-07 22:12:38,867-[INFO]-test_register.py[line:35] -[register]-[日志信息]:{'mobilephone': 13799995034, 'pwd': '123456@12', 'regname': 'huahua'}
+2020-02-07 22:12:38,868-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/register
+2020-02-07 22:12:38,868-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': 13799995034, 'pwd': '123456@12', 'regname': 'huahua'}
+2020-02-07 22:12:39,018-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":null,"msg":"注册成功"}
+2020-02-07 22:12:39,020-[INFO]-test_register.py[line:37] -[register]-[日志信息]:{"status":1,"code":"10001","data":null,"msg":"注册成功"}
+2020-02-07 22:12:39,362-[INFO]-test_register.py[line:62] -[register]-[日志信息]:第11用例执行结果：PASS
+2020-02-07 22:12:39,362-[INFO]-test_register.py[line:69] -[register]-[日志信息]:用例执行结束
+2020-02-07 22:12:39,503-[INFO]-test_register.py[line:21] -[register]-[日志信息]:13799995035
+2020-02-07 22:12:39,505-[INFO]-test_register.py[line:30] -[register]-[日志信息]:开始执行第12用例
+2020-02-07 22:12:39,506-[INFO]-test_register.py[line:35] -[register]-[日志信息]:{'mobilephone': 13799995035, 'pwd': '123456hua_12', 'regname': 'huahua'}
+2020-02-07 22:12:39,510-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/register
+2020-02-07 22:12:39,511-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': 13799995035, 'pwd': '123456hua_12', 'regname': 'huahua'}
+2020-02-07 22:12:39,684-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":null,"msg":"注册成功"}
+2020-02-07 22:12:39,685-[INFO]-test_register.py[line:37] -[register]-[日志信息]:{"status":1,"code":"10001","data":null,"msg":"注册成功"}
+2020-02-07 22:12:40,042-[INFO]-test_register.py[line:62] -[register]-[日志信息]:第12用例执行结果：PASS
+2020-02-07 22:12:40,042-[INFO]-test_register.py[line:69] -[register]-[日志信息]:用例执行结束
+2020-02-07 22:12:40,166-[INFO]-test_register.py[line:21] -[register]-[日志信息]:13799995036
+2020-02-07 22:12:40,167-[INFO]-test_register.py[line:30] -[register]-[日志信息]:开始执行第13用例
+2020-02-07 22:12:40,168-[INFO]-test_register.py[line:35] -[register]-[日志信息]:{'mobilephone': 13799995036, 'pwd': '123456@12', 'regname': ''}
+2020-02-07 22:12:40,171-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/register
+2020-02-07 22:12:40,172-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': 13799995036, 'pwd': '123456@12', 'regname': ''}
+2020-02-07 22:12:40,326-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":null,"msg":"注册成功"}
+2020-02-07 22:12:40,327-[INFO]-test_register.py[line:37] -[register]-[日志信息]:{"status":1,"code":"10001","data":null,"msg":"注册成功"}
+2020-02-07 22:12:40,663-[INFO]-test_register.py[line:62] -[register]-[日志信息]:第13用例执行结果：PASS
+2020-02-07 22:12:40,663-[INFO]-test_register.py[line:69] -[register]-[日志信息]:用例执行结束
+2020-02-07 22:12:40,792-[INFO]-test_register.py[line:21] -[register]-[日志信息]:13799995037
+2020-02-07 22:12:40,792-[INFO]-test_register.py[line:30] -[register]-[日志信息]:开始执行第14用例
+2020-02-07 22:12:40,792-[INFO]-test_register.py[line:35] -[register]-[日志信息]:{'mobilephone': 13799995037, 'pwd': '123456@12', 'regname': 'huahua@'}
+2020-02-07 22:12:40,793-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/register
+2020-02-07 22:12:40,794-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': 13799995037, 'pwd': '123456@12', 'regname': 'huahua@'}
+2020-02-07 22:12:40,938-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":null,"msg":"注册成功"}
+2020-02-07 22:12:40,938-[INFO]-test_register.py[line:37] -[register]-[日志信息]:{"status":1,"code":"10001","data":null,"msg":"注册成功"}
+2020-02-07 22:12:41,378-[INFO]-test_register.py[line:62] -[register]-[日志信息]:第14用例执行结果：PASS
+2020-02-07 22:12:41,379-[INFO]-test_register.py[line:69] -[register]-[日志信息]:用例执行结束
+2020-02-07 22:12:41,520-[INFO]-test_register.py[line:21] -[register]-[日志信息]:13799995038
+2020-02-07 22:12:41,520-[INFO]-test_register.py[line:30] -[register]-[日志信息]:开始执行第15用例
+2020-02-07 22:12:41,520-[INFO]-test_register.py[line:35] -[register]-[日志信息]:{'mobilephone': 13799995038, 'pwd': '123456', 'regname': 'huahua'}
+2020-02-07 22:12:41,522-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/register
+2020-02-07 22:12:41,522-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': 13799995038, 'pwd': '123456', 'regname': 'huahua'}
+2020-02-07 22:12:41,701-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":null,"msg":"注册成功"}
+2020-02-07 22:12:41,702-[INFO]-test_register.py[line:37] -[register]-[日志信息]:{"status":1,"code":"10001","data":null,"msg":"注册成功"}
+2020-02-07 22:12:42,076-[INFO]-test_register.py[line:62] -[register]-[日志信息]:第15用例执行结果：PASS
+2020-02-07 22:12:42,076-[INFO]-test_register.py[line:69] -[register]-[日志信息]:用例执行结束
+2020-02-07 22:12:42,199-[INFO]-test_register.py[line:21] -[register]-[日志信息]:13799995039
+2020-02-07 22:12:42,200-[INFO]-test_register.py[line:30] -[register]-[日志信息]:开始执行第16用例
+2020-02-07 22:12:42,201-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/register
+2020-02-07 22:12:42,202-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '', 'pwd': '123456', 'regname': 'huahua'}
+2020-02-07 22:12:42,212-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}
+2020-02-07 22:12:42,213-[INFO]-test_register.py[line:37] -[register]-[日志信息]:{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}
+2020-02-07 22:12:42,432-[INFO]-test_register.py[line:62] -[register]-[日志信息]:第16用例执行结果：PASS
+2020-02-07 22:12:42,432-[INFO]-test_register.py[line:69] -[register]-[日志信息]:用例执行结束
+2020-02-07 22:12:42,559-[INFO]-test_register.py[line:21] -[register]-[日志信息]:13799995039
+2020-02-07 22:12:42,560-[INFO]-test_register.py[line:30] -[register]-[日志信息]:开始执行第17用例
+2020-02-07 22:12:42,562-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/register
+2020-02-07 22:12:42,563-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '18877314371', 'pwd': '123456', 'regname': 'huahua'}
+2020-02-07 22:12:42,703-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20110","data":null,"msg":"手机号码已被注册"}
+2020-02-07 22:12:42,704-[INFO]-test_register.py[line:37] -[register]-[日志信息]:{"status":0,"code":"20110","data":null,"msg":"手机号码已被注册"}
+2020-02-07 22:12:43,017-[INFO]-test_register.py[line:62] -[register]-[日志信息]:第17用例执行结果：PASS
+2020-02-07 22:12:43,018-[INFO]-test_register.py[line:69] -[register]-[日志信息]:用例执行结束
+2020-02-07 22:12:43,156-[INFO]-test_register.py[line:21] -[register]-[日志信息]:13799995039
+2020-02-07 22:12:43,156-[INFO]-test_register.py[line:30] -[register]-[日志信息]:开始执行第18用例
+2020-02-07 22:12:43,158-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/register
+2020-02-07 22:12:43,158-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '188773143723', 'pwd': '123456', 'regname': 'huahua'}
+2020-02-07 22:12:43,170-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2020-02-07 22:12:43,171-[INFO]-test_register.py[line:37] -[register]-[日志信息]:{"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2020-02-07 22:12:43,490-[INFO]-test_register.py[line:62] -[register]-[日志信息]:第18用例执行结果：PASS
+2020-02-07 22:12:43,490-[INFO]-test_register.py[line:69] -[register]-[日志信息]:用例执行结束
+2020-02-07 22:12:43,615-[INFO]-test_register.py[line:21] -[register]-[日志信息]:13799995039
+2020-02-07 22:12:43,615-[INFO]-test_register.py[line:30] -[register]-[日志信息]:开始执行第19用例
+2020-02-07 22:12:43,617-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/register
+2020-02-07 22:12:43,618-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '1887731437', 'pwd': '123456', 'regname': 'huahua'}
+2020-02-07 22:12:43,629-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2020-02-07 22:12:43,630-[INFO]-test_register.py[line:37] -[register]-[日志信息]:{"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2020-02-07 22:12:43,980-[INFO]-test_register.py[line:62] -[register]-[日志信息]:第19用例执行结果：PASS
+2020-02-07 22:12:43,984-[INFO]-test_register.py[line:69] -[register]-[日志信息]:用例执行结束
+2020-02-07 22:12:44,112-[INFO]-test_register.py[line:21] -[register]-[日志信息]:13799995039
+2020-02-07 22:12:44,112-[INFO]-test_register.py[line:30] -[register]-[日志信息]:开始执行第20用例
+2020-02-07 22:12:44,114-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/register
+2020-02-07 22:12:44,114-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '1778980034', 'pwd': '123456', 'regname': 'huahua'}
+2020-02-07 22:12:44,128-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2020-02-07 22:12:44,128-[INFO]-test_register.py[line:37] -[register]-[日志信息]:{"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2020-02-07 22:12:44,550-[INFO]-test_register.py[line:62] -[register]-[日志信息]:第20用例执行结果：PASS
+2020-02-07 22:12:44,551-[INFO]-test_register.py[line:69] -[register]-[日志信息]:用例执行结束
+2020-02-07 22:12:44,676-[INFO]-test_register.py[line:21] -[register]-[日志信息]:13799995039
+2020-02-07 22:12:44,676-[INFO]-test_register.py[line:30] -[register]-[日志信息]:开始执行第21用例
+2020-02-07 22:12:44,677-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/register
+2020-02-07 22:12:44,678-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '12345678901', 'pwd': '123456', 'regname': 'huahua'}
+2020-02-07 22:12:44,688-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2020-02-07 22:12:44,690-[INFO]-test_register.py[line:37] -[register]-[日志信息]:{"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2020-02-07 22:12:45,056-[INFO]-test_register.py[line:62] -[register]-[日志信息]:第21用例执行结果：PASS
+2020-02-07 22:12:45,057-[INFO]-test_register.py[line:69] -[register]-[日志信息]:用例执行结束
+2020-02-07 22:12:45,203-[INFO]-test_register.py[line:21] -[register]-[日志信息]:13799995039
+2020-02-07 22:12:45,204-[INFO]-test_register.py[line:30] -[register]-[日志信息]:开始执行第22用例
+2020-02-07 22:12:45,206-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/register
+2020-02-07 22:12:45,206-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '18877314372', 'pwd': '', 'regname': 'huahua'}
+2020-02-07 22:12:45,219-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20103","data":null,"msg":"密码不能为空"}
+2020-02-07 22:12:45,219-[INFO]-test_register.py[line:37] -[register]-[日志信息]:{"status":0,"code":"20103","data":null,"msg":"密码不能为空"}
+2020-02-07 22:12:45,567-[INFO]-test_register.py[line:62] -[register]-[日志信息]:第22用例执行结果：PASS
+2020-02-07 22:12:45,567-[INFO]-test_register.py[line:69] -[register]-[日志信息]:用例执行结束
+2020-02-07 22:12:45,684-[INFO]-test_register.py[line:21] -[register]-[日志信息]:13799995039
+2020-02-07 22:12:45,685-[INFO]-test_register.py[line:30] -[register]-[日志信息]:开始执行第23用例
+2020-02-07 22:12:45,687-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/register
+2020-02-07 22:12:45,688-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '18877314372', 'pwd': '12345', 'regname': 'huahua'}
+2020-02-07 22:12:45,699-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20108","data":null,"msg":"密码长度必须为6~18"}
+2020-02-07 22:12:45,699-[INFO]-test_register.py[line:37] -[register]-[日志信息]:{"status":0,"code":"20108","data":null,"msg":"密码长度必须为6~18"}
+2020-02-07 22:12:46,006-[INFO]-test_register.py[line:62] -[register]-[日志信息]:第23用例执行结果：PASS
+2020-02-07 22:12:46,006-[INFO]-test_register.py[line:69] -[register]-[日志信息]:用例执行结束
+2020-02-07 22:12:46,147-[INFO]-test_register.py[line:21] -[register]-[日志信息]:13799995039
+2020-02-07 22:12:46,147-[INFO]-test_register.py[line:30] -[register]-[日志信息]:开始执行第24用例
+2020-02-07 22:12:46,149-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/register
+2020-02-07 22:12:46,149-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '18877314372', 'pwd': '1234567890123456789', 'regname': 'huahua'}
+2020-02-07 22:12:46,160-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20108","data":null,"msg":"密码长度必须为6~18"}
+2020-02-07 22:12:46,160-[INFO]-test_register.py[line:37] -[register]-[日志信息]:{"status":0,"code":"20108","data":null,"msg":"密码长度必须为6~18"}
+2020-02-07 22:12:46,473-[INFO]-test_register.py[line:62] -[register]-[日志信息]:第24用例执行结果：PASS
+2020-02-07 22:12:46,473-[INFO]-test_register.py[line:69] -[register]-[日志信息]:用例执行结束
+2020-02-07 22:12:46,589-[INFO]-test_register.py[line:21] -[register]-[日志信息]:13799995039
+2020-02-07 22:12:46,590-[INFO]-test_register.py[line:30] -[register]-[日志信息]:开始执行第25用例
+2020-02-07 22:12:46,591-[INFO]-test_register.py[line:35] -[register]-[日志信息]:{'mobilephone': 13799995039, 'pwd': '123456@12', 'regname': 'huahua'}
+2020-02-07 22:12:46,596-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/register
+2020-02-07 22:12:46,597-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': 13799995039, 'pwd': '123456@12', 'regname': 'huahua'}
+2020-02-07 22:12:46,780-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":null,"msg":"注册成功"}
+2020-02-07 22:12:46,784-[INFO]-test_register.py[line:37] -[register]-[日志信息]:{"status":1,"code":"10001","data":null,"msg":"注册成功"}
+2020-02-07 22:12:47,331-[INFO]-test_register.py[line:62] -[register]-[日志信息]:第25用例执行结果：PASS
+2020-02-07 22:12:47,331-[INFO]-test_register.py[line:69] -[register]-[日志信息]:用例执行结束
+2020-02-07 22:12:47,448-[INFO]-test_register.py[line:21] -[register]-[日志信息]:13799995040
+2020-02-07 22:12:47,448-[INFO]-test_register.py[line:30] -[register]-[日志信息]:开始执行第26用例
+2020-02-07 22:12:47,449-[INFO]-test_register.py[line:35] -[register]-[日志信息]:{'mobilephone': 13799995040, 'pwd': '123456hua_12', 'regname': 'huahua'}
+2020-02-07 22:12:47,450-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/register
+2020-02-07 22:12:47,450-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': 13799995040, 'pwd': '123456hua_12', 'regname': 'huahua'}
+2020-02-07 22:12:47,611-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":null,"msg":"注册成功"}
+2020-02-07 22:12:47,612-[INFO]-test_register.py[line:37] -[register]-[日志信息]:{"status":1,"code":"10001","data":null,"msg":"注册成功"}
+2020-02-07 22:12:48,175-[INFO]-test_register.py[line:62] -[register]-[日志信息]:第26用例执行结果：PASS
+2020-02-07 22:12:48,176-[INFO]-test_register.py[line:69] -[register]-[日志信息]:用例执行结束
+2020-02-07 22:12:48,307-[INFO]-test_register.py[line:21] -[register]-[日志信息]:13799995041
+2020-02-07 22:12:48,308-[INFO]-test_register.py[line:30] -[register]-[日志信息]:开始执行第27用例
+2020-02-07 22:12:48,308-[INFO]-test_register.py[line:35] -[register]-[日志信息]:{'mobilephone': 13799995041, 'pwd': '123456@12', 'regname': ''}
+2020-02-07 22:12:48,309-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/register
+2020-02-07 22:12:48,310-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': 13799995041, 'pwd': '123456@12', 'regname': ''}
+2020-02-07 22:12:48,463-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":null,"msg":"注册成功"}
+2020-02-07 22:12:48,463-[INFO]-test_register.py[line:37] -[register]-[日志信息]:{"status":1,"code":"10001","data":null,"msg":"注册成功"}
+2020-02-07 22:12:48,996-[INFO]-test_register.py[line:62] -[register]-[日志信息]:第27用例执行结果：PASS
+2020-02-07 22:12:48,996-[INFO]-test_register.py[line:69] -[register]-[日志信息]:用例执行结束
+2020-02-07 22:12:49,122-[INFO]-test_register.py[line:21] -[register]-[日志信息]:13799995042
+2020-02-07 22:12:49,122-[INFO]-test_register.py[line:30] -[register]-[日志信息]:开始执行第28用例
+2020-02-07 22:12:49,123-[INFO]-test_register.py[line:35] -[register]-[日志信息]:{'mobilephone': 13799995042, 'pwd': '123456@12', 'regname': 'huahua@'}
+2020-02-07 22:12:49,124-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/register
+2020-02-07 22:12:49,125-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': 13799995042, 'pwd': '123456@12', 'regname': 'huahua@'}
+2020-02-07 22:12:49,273-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":null,"msg":"注册成功"}
+2020-02-07 22:12:49,275-[INFO]-test_register.py[line:37] -[register]-[日志信息]:{"status":1,"code":"10001","data":null,"msg":"注册成功"}
+2020-02-07 22:12:49,851-[INFO]-test_register.py[line:62] -[register]-[日志信息]:第28用例执行结果：PASS
+2020-02-07 22:12:49,851-[INFO]-test_register.py[line:69] -[register]-[日志信息]:用例执行结束
+2020-02-07 22:12:49,891-[INFO]-test_withdraw.py[line:23] -[withdraw]-[日志信息]:开始执行第1用例
+2020-02-07 22:12:49,892-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+2020-02-07 22:12:49,893-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 90}
+2020-02-07 22:12:49,925-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":null,"data":null,"msg":"抱歉，请先登录。"}
+2020-02-07 22:12:50,024-[INFO]-test_withdraw.py[line:58] -[withdraw]-[日志信息]:第1用例执行结果：PASS
+2020-02-07 22:12:50,025-[INFO]-test_withdraw.py[line:23] -[withdraw]-[日志信息]:开始执行第2用例
+2020-02-07 22:12:50,026-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/login
+2020-02-07 22:12:50,027-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'pwd': '123456', 'regname': 'nana'}
+2020-02-07 22:12:50,190-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":null,"msg":"登录成功"}
+2020-02-07 22:12:50,457-[INFO]-test_withdraw.py[line:58] -[withdraw]-[日志信息]:第2用例执行结果：PASS
+2020-02-07 22:12:50,458-[INFO]-test_withdraw.py[line:23] -[withdraw]-[日志信息]:开始执行第3用例
+2020-02-07 22:12:50,459-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+2020-02-07 22:12:50,459-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 90}
+2020-02-07 22:12:50,965-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"104522310.18","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"取现成功"}
+2020-02-07 22:12:51,083-[INFO]-test_withdraw.py[line:58] -[withdraw]-[日志信息]:第3用例执行结果：PASS
+2020-02-07 22:12:51,084-[INFO]-test_withdraw.py[line:23] -[withdraw]-[日志信息]:开始执行第4用例
+2020-02-07 22:12:51,086-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+2020-02-07 22:12:51,086-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 0}
+2020-02-07 22:12:51,528-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"104522310.18","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"取现成功"}
+2020-02-07 22:12:51,642-[INFO]-test_withdraw.py[line:58] -[withdraw]-[日志信息]:第4用例执行结果：PASS
+2020-02-07 22:12:51,644-[INFO]-test_withdraw.py[line:23] -[withdraw]-[日志信息]:开始执行第5用例
+2020-02-07 22:12:51,645-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+2020-02-07 22:12:51,646-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '', 'amount': 0}
+2020-02-07 22:12:51,656-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}
+2020-02-07 22:12:51,775-[INFO]-test_withdraw.py[line:58] -[withdraw]-[日志信息]:第5用例执行结果：PASS
+2020-02-07 22:12:51,777-[INFO]-test_withdraw.py[line:23] -[withdraw]-[日志信息]:开始执行第6用例
+2020-02-07 22:12:51,778-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+2020-02-07 22:12:51,778-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': 13407762223, 'amount': 80}
+2020-02-07 22:12:51,927-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":1,"code":"20104","data":null,"msg":"此手机号对应的会员不存在"}
+2020-02-07 22:12:52,041-[INFO]-test_withdraw.py[line:58] -[withdraw]-[日志信息]:第6用例执行结果：PASS
+2020-02-07 22:12:52,042-[INFO]-test_withdraw.py[line:23] -[withdraw]-[日志信息]:开始执行第7用例
+2020-02-07 22:12:52,044-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+2020-02-07 22:12:52,044-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': 5617291, 'amount': 70}
+2020-02-07 22:12:52,055-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2020-02-07 22:12:52,193-[INFO]-test_withdraw.py[line:58] -[withdraw]-[日志信息]:第7用例执行结果：PASS
+2020-02-07 22:12:52,194-[INFO]-test_withdraw.py[line:23] -[withdraw]-[日志信息]:开始执行第8用例
+2020-02-07 22:12:52,195-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+2020-02-07 22:12:52,196-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': ''}
+2020-02-07 22:12:52,207-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20115","data":null,"msg":"请输入金额"}
+2020-02-07 22:12:52,369-[INFO]-test_withdraw.py[line:58] -[withdraw]-[日志信息]:第8用例执行结果：PASS
+2020-02-07 22:12:52,370-[INFO]-test_withdraw.py[line:23] -[withdraw]-[日志信息]:开始执行第9用例
+2020-02-07 22:12:52,371-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+2020-02-07 22:12:52,372-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': '50.123'}
+2020-02-07 22:12:52,382-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20116","data":null,"msg":"输入金额的金额小数不能超过两位"}
+2020-02-07 22:12:52,544-[INFO]-test_withdraw.py[line:58] -[withdraw]-[日志信息]:第9用例执行结果：PASS
+2020-02-07 22:12:52,545-[INFO]-test_withdraw.py[line:23] -[withdraw]-[日志信息]:开始执行第10用例
+2020-02-07 22:12:52,547-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+2020-02-07 22:12:52,547-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': '50.11'}
+2020-02-07 22:12:53,038-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"104522260.07","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"取现成功"}
+2020-02-07 22:12:53,202-[INFO]-test_withdraw.py[line:58] -[withdraw]-[日志信息]:第10用例执行结果：PASS
+2020-02-07 22:12:53,203-[INFO]-test_withdraw.py[line:23] -[withdraw]-[日志信息]:开始执行第11用例
+2020-02-07 22:12:53,204-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+2020-02-07 22:12:53,204-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': '五十'}
+2020-02-07 22:12:53,216-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20118","data":null,"msg":"请输入数字"}
+2020-02-07 22:12:53,389-[INFO]-test_withdraw.py[line:58] -[withdraw]-[日志信息]:第11用例执行结果：PASS
+2020-02-07 22:12:53,390-[INFO]-test_withdraw.py[line:23] -[withdraw]-[日志信息]:开始执行第12用例
+2020-02-07 22:12:53,391-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+2020-02-07 22:12:53,391-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 5000001}
+2020-02-07 22:12:53,554-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20117","data":null,"msg":"请输入范围在0到50万之间的正数金额"}
+2020-02-07 22:12:53,734-[INFO]-test_withdraw.py[line:58] -[withdraw]-[日志信息]:第12用例执行结果：PASS
+2020-02-07 22:12:53,735-[INFO]-test_withdraw.py[line:23] -[withdraw]-[日志信息]:开始执行第13用例
+2020-02-07 22:12:53,736-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+2020-02-07 22:12:53,737-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': -20}
+2020-02-07 22:12:53,900-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":0,"code":"20117","data":null,"msg":"请输入范围在0到50万之间的正数金额"}
+2020-02-07 22:12:54,157-[INFO]-test_withdraw.py[line:58] -[withdraw]-[日志信息]:第13用例执行结果：PASS
+2020-02-07 22:12:54,158-[INFO]-test_withdraw.py[line:23] -[withdraw]-[日志信息]:开始执行第14用例
+2020-02-07 22:12:54,159-[INFO]-request.py[line:30] -[request]-[日志信息]:method: GET  url: http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+2020-02-07 22:12:54,160-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 500000}
+2020-02-07 22:12:54,614-[INFO]-request.py[line:35] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"104022260.07","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"取现成功"}
+2020-02-07 22:12:54,799-[INFO]-test_withdraw.py[line:58] -[withdraw]-[日志信息]:第14用例执行结果：PASS
+2020-02-07 22:12:54,800-[INFO]-test_withdraw.py[line:23] -[withdraw]-[日志信息]:开始执行第15用例
+2020-02-07 22:12:54,802-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+2020-02-07 22:12:54,802-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 90}
+2020-02-07 22:12:55,280-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"104022170.07","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"取现成功"}
+2020-02-07 22:12:55,514-[INFO]-test_withdraw.py[line:58] -[withdraw]-[日志信息]:第15用例执行结果：PASS
+2020-02-07 22:12:55,515-[INFO]-test_withdraw.py[line:23] -[withdraw]-[日志信息]:开始执行第16用例
+2020-02-07 22:12:55,516-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+2020-02-07 22:12:55,517-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 0}
+2020-02-07 22:12:55,977-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"104022170.07","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"取现成功"}
+2020-02-07 22:12:56,213-[INFO]-test_withdraw.py[line:58] -[withdraw]-[日志信息]:第16用例执行结果：PASS
+2020-02-07 22:12:56,214-[INFO]-test_withdraw.py[line:23] -[withdraw]-[日志信息]:开始执行第17用例
+2020-02-07 22:12:56,219-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+2020-02-07 22:12:56,219-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '', 'amount': 0}
+2020-02-07 22:12:56,230-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}
+2020-02-07 22:12:56,467-[INFO]-test_withdraw.py[line:58] -[withdraw]-[日志信息]:第17用例执行结果：PASS
+2020-02-07 22:12:56,468-[INFO]-test_withdraw.py[line:23] -[withdraw]-[日志信息]:开始执行第18用例
+2020-02-07 22:12:56,469-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+2020-02-07 22:12:56,470-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': 13407762223, 'amount': 80}
+2020-02-07 22:12:56,633-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":1,"code":"20104","data":null,"msg":"此手机号对应的会员不存在"}
+2020-02-07 22:12:56,874-[INFO]-test_withdraw.py[line:58] -[withdraw]-[日志信息]:第18用例执行结果：PASS
+2020-02-07 22:12:56,875-[INFO]-test_withdraw.py[line:23] -[withdraw]-[日志信息]:开始执行第19用例
+2020-02-07 22:12:56,877-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+2020-02-07 22:12:56,877-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': 5617291, 'amount': 70}
+2020-02-07 22:12:56,888-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2020-02-07 22:12:57,145-[INFO]-test_withdraw.py[line:58] -[withdraw]-[日志信息]:第19用例执行结果：PASS
+2020-02-07 22:12:57,146-[INFO]-test_withdraw.py[line:23] -[withdraw]-[日志信息]:开始执行第20用例
+2020-02-07 22:12:57,147-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+2020-02-07 22:12:57,148-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': ''}
+2020-02-07 22:12:57,159-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20115","data":null,"msg":"请输入金额"}
+2020-02-07 22:12:57,429-[INFO]-test_withdraw.py[line:58] -[withdraw]-[日志信息]:第20用例执行结果：PASS
+2020-02-07 22:12:57,430-[INFO]-test_withdraw.py[line:23] -[withdraw]-[日志信息]:开始执行第21用例
+2020-02-07 22:12:57,431-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+2020-02-07 22:12:57,431-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': '50.123'}
+2020-02-07 22:12:57,442-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20116","data":null,"msg":"输入金额的金额小数不能超过两位"}
+2020-02-07 22:12:57,742-[INFO]-test_withdraw.py[line:58] -[withdraw]-[日志信息]:第21用例执行结果：PASS
+2020-02-07 22:12:57,743-[INFO]-test_withdraw.py[line:23] -[withdraw]-[日志信息]:开始执行第22用例
+2020-02-07 22:12:57,744-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+2020-02-07 22:12:57,745-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': '50.11'}
+2020-02-07 22:12:58,280-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"104022119.96","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"取现成功"}
+2020-02-07 22:12:58,606-[INFO]-test_withdraw.py[line:58] -[withdraw]-[日志信息]:第22用例执行结果：PASS
+2020-02-07 22:12:58,607-[INFO]-test_withdraw.py[line:23] -[withdraw]-[日志信息]:开始执行第23用例
+2020-02-07 22:12:58,608-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+2020-02-07 22:12:58,608-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': '五十'}
+2020-02-07 22:12:58,621-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20118","data":null,"msg":"请输入数字"}
+2020-02-07 22:12:58,965-[INFO]-test_withdraw.py[line:58] -[withdraw]-[日志信息]:第23用例执行结果：PASS
+2020-02-07 22:12:58,967-[INFO]-test_withdraw.py[line:23] -[withdraw]-[日志信息]:开始执行第24用例
+2020-02-07 22:12:58,968-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+2020-02-07 22:12:58,968-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 5000001}
+2020-02-07 22:12:59,108-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20117","data":null,"msg":"请输入范围在0到50万之间的正数金额"}
+2020-02-07 22:12:59,642-[INFO]-test_withdraw.py[line:58] -[withdraw]-[日志信息]:第24用例执行结果：PASS
+2020-02-07 22:12:59,643-[INFO]-test_withdraw.py[line:23] -[withdraw]-[日志信息]:开始执行第25用例
+2020-02-07 22:12:59,644-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+2020-02-07 22:12:59,645-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': -20}
+2020-02-07 22:12:59,807-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":0,"code":"20117","data":null,"msg":"请输入范围在0到50万之间的正数金额"}
+2020-02-07 22:13:00,165-[INFO]-test_withdraw.py[line:58] -[withdraw]-[日志信息]:第25用例执行结果：PASS
+2020-02-07 22:13:00,166-[INFO]-test_withdraw.py[line:23] -[withdraw]-[日志信息]:开始执行第26用例
+2020-02-07 22:13:00,167-[INFO]-request.py[line:30] -[request]-[日志信息]:method: POST  url: http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+2020-02-07 22:13:00,167-[INFO]-request.py[line:31] -[request]-[日志信息]:data: {'mobilephone': '13670287382', 'amount': 500000}
+2020-02-07 22:13:00,672-[INFO]-request.py[line:40] -[request]-[日志信息]:response: {"status":1,"code":"10001","data":{"id":2294,"regname":"huahua","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13670287382","leaveamount":"103522119.96","type":"1","regtime":"2019-05-18 17:00:23.0"},"msg":"取现成功"}
+2020-02-07 22:13:01,200-[INFO]-test_withdraw.py[line:58] -[withdraw]-[日志信息]:第26用例执行结果：PASS

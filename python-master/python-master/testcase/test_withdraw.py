@@ -2,7 +2,7 @@ import unittest
 import json
 from common import context
 from common import contants
-from ddt import ddt,data
+from libext.ddtnew import ddt,data
 from common.request import Request
 from common.do_excel import DoExcel
 from common.mysql import MysqlUntil
